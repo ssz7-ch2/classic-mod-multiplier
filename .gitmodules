@@ -1,0 +1,4 @@
+[submodule "circlecore"]
+	path = circlecore
+	url = https://github.com/ssz7-ch2/circlecore.git
+	branch = combo-progress-and-slider-acc
