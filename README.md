@@ -17,13 +17,13 @@ pip install -r requirements.txt
 
 ## Usage
 
-Specific replay on map
+Specific replay on map (`-l` is to print out info for the replay)
 
 ```
 python run.py -l -b 1811527 -u 7562902
 ```
 
-5 random replays from #30 to #60 on map
+5 random replays from #30 to #60 on map (`-s` is to save info to file)
 
 ```
 python run.py -s -b 1811527 --start 30 --end 60 --sample-size 5
