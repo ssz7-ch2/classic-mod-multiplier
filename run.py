@@ -100,9 +100,9 @@ def _run(replay, beatmap, beatmap_id, logging=False, save=True):
   # so we can estimate the number of sliderbreaks by subtracting the replay.count_miss from the calculated misses
   sliderbreaks = calculated["count_miss"] - replay.count_miss
 
-  # circleguard judgments does not include 100s from sliderends
-  # so the discrepancy between the replay.count_100 and calculated 100s is the missed_sliderends* + sliderbreaks
-  # *these can also be due missing sliderticks, but that rarely happens
+  # circleguard judgments does not include 100s from sliderends, but we can estimate it
+  # the discrepancy between the replay.count_100 and calculated 100s is the missed_sliderends* + sliderbreaks
+  # *these can also be due to missing sliderticks, but that rarely happens
   missed_sliderends = replay.count_100 - sliderbreaks - calculated["count_100"]
 
   if logging:
