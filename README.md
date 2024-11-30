@@ -1,16 +1,19 @@
 ## Setup
 
-git clone with submodules
+1. git clone with submodules
 
 ```
 git clone --recurse-submodules https://github.com/ssz7-ch2/classic-mod-multiplier.git
 ```
 
-Install requirements
+2. Install requirements
 
 ```
 pip install -r requirements.txt
 ```
+
+3. Place client id, client secret, and api v1 key in .env (follow the example in
+   .env.example)
 
 ## Usage
 
