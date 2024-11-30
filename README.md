@@ -6,9 +6,10 @@
 git clone --recurse-submodules https://github.com/ssz7-ch2/classic-mod-multiplier.git
 ```
 
-2. Install requirements
+2. cd into classic-mod-multiplier folder and install requirements
 
 ```
+cd classic-mod-multipler
 pip install -r requirements.txt
 ```
 
