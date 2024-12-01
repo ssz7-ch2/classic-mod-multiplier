@@ -163,7 +163,7 @@ def get_score_multiplier(mods: list[NonLegacyMod]):
       multiplier *= 1.06
     if mod.acronym == "HR":
       multiplier *= 1.06
-    if mod.acronym == "DT":
+    if mod.acronym == "DT" or mod.acronym == "NC":
       multiplier *= 1.10
     if mod.acronym == "FL":
       multiplier *= 1.12
